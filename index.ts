@@ -1,7 +1,8 @@
 console.log("test")
 // console.log("more test")
+require('dotenv').config()
 import fastify from 'fastify'
-
+console.log(process.env.PS)
 const server = fastify()
 
 server.get('/ping', async (request, reply) => {
